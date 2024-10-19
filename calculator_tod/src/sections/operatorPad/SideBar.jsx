@@ -3,9 +3,9 @@ import './sideBar.css'
 function SideBar () {
   return (
     <div className='side-bar'>
-      <div className='numGrid clear operator'>clr</div>
-      <div className='numGrid multiplication operator'>*</div>
-      <div className='numGrid division operator'>/</div>
+      <button className='numGrid clear operator'>clr</button>
+      <button className='numGrid multiplication operator'>*</button>
+      <button className='numGrid buttonision operator'>/</button>
       
     </div>
   )

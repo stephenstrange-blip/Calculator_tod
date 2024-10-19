@@ -41,7 +41,7 @@ function NumGrid() {
                         <div className={`gridRow number${row}`} key={row}>
                             {[9, 8, 7].map((column) => {
                                 let index = column - row * 3;
-                                return (<div className={`numGrid number${index}`} key={index}>{index}</div>)
+                                return (<button className={`numGrid number${index}`} key={index}>{index}</button>)
                             })
                             }
                         </div>
