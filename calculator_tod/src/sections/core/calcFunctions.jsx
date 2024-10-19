@@ -28,3 +28,5 @@ console.log(operate(1,"-", 2))
 console.log(operate(1, "*", 2))
 console.log(operate(1, "/", 2))
 console.log(operate(1, "%", 2))*/
+
+
