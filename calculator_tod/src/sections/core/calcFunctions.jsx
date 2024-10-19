@@ -1,4 +1,4 @@
-import Display from "../display/Display";
+import { useState } from "react";
 
 let num1 = 0;
 let num2 = 0;
@@ -30,9 +30,16 @@ console.log(operate(1,"-", 2))
 console.log(operate(1, "*", 2))
 console.log(operate(1, "/", 2))
 console.log(operate(1, "%", 2))*/
-function onNumClick(value){
-    return value;
+function InputNum () {
+    const [num, setNum] = useState(0);
+
+    const inputNum = (value) => {
+        setNum(value);
+    };
+    return [num, inputNum];
 }
 
-export default onNumClick
+
+
+export default InputNum
 

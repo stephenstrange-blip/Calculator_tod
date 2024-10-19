@@ -4,10 +4,12 @@ import './App.css';
 import NumGrid from './sections/numGrid/NumGrid';
 import BottomBar from './sections/operatorPad/BottomBar';
 import Display from './sections/display/Display';
-import onNumClick from './sections/core/calcFunctions';
+import InputNum from './sections/core/calcFunctions';
+
 
 function App() {
-  return (
+  const [num, setNum] = InputNum();
+  return ( 
     <div className="App">
       {/*<header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
@@ -23,9 +25,9 @@ function App() {
           Learn React
         </a>
       </header>*/}
-      <NumGrid onNumClick= {onNumClick}/>
-      <BottomBar/>
-      <Display/>
+      <NumGrid onNumClick={setNum} />
+      <BottomBar onNumClick={setNum}/>
+      <Display value={num}/>
     </div>
   );
 }
