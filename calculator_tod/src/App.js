@@ -1,8 +1,10 @@
+
 import logo from './logo.svg';
 import './App.css';
 import NumGrid from './sections/numGrid/NumGrid';
 import BottomBar from './sections/operatorPad/BottomBar';
 import Display from './sections/display/Display';
+import onNumClick from './sections/core/calcFunctions';
 
 function App() {
   return (
@@ -21,7 +23,7 @@ function App() {
           Learn React
         </a>
       </header>*/}
-      <NumGrid/>
+      <NumGrid onNumClick= {onNumClick}/>
       <BottomBar/>
       <Display/>
     </div>

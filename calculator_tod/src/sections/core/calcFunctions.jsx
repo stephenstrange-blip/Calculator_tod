@@ -1,3 +1,5 @@
+import Display from "../display/Display";
+
 let num1 = 0;
 let num2 = 0;
 let operator = '';
@@ -28,5 +30,9 @@ console.log(operate(1,"-", 2))
 console.log(operate(1, "*", 2))
 console.log(operate(1, "/", 2))
 console.log(operate(1, "%", 2))*/
+function onNumClick(value){
+    return value;
+}
 
+export default onNumClick
 

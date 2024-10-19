@@ -16,7 +16,7 @@ function NumGrid(onNumClick) {
                                     
                                     className={`numGrid number${index}`} 
                                     key={index}
-                                    onClick={onNumClick}
+                                    onClick={() => onNumClick(index)}
 
                                     >{index}</button>)
                             })
