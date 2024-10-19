@@ -1,4 +1,5 @@
-import './numPad.css';
+import './numGrid.css';
+import SideBar from '../operatorPad/SideBar';
 
 let num1 = 0;
 let num2 = 0;
@@ -33,17 +34,25 @@ console.log(operate(1, "%", 2))*/
 
 function NumGrid() {
     return (
-        [0,1,2].map((row) => {
-            return (
-                <div className={`gridRow number${row}`}>
-                    {[9,8,7].map((column) => {
-                        let index = column - row * 3;
-                        return (<div className={`numGrid number${index}`}>{index}</div>)
-                    })
-                    }
-                </div>
-            )
-        }))
+        <div className='upper-container'>
+            <div className='numPad'>
+                {[0, 1, 2].map((row) => {
+                    return (
+                        <div className={`gridRow number${row}`}>
+                            {[9, 8, 7].map((column) => {
+                                let index = column - row * 3;
+                                return (<div className={`numGrid number${index}`}>{index}</div>)
+                            })
+                            }
+                        </div>
+                    )
+                })}
+            </div>
+            <SideBar />
+
+        </div>
+
+    )
 }
 export default NumGrid;
 
