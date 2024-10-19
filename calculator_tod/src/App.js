@@ -2,6 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import NumGrid from './sections/numGrid/NumGrid';
 import BottomBar from './sections/operatorPad/BottomBar';
+import Display from './sections/display/Display';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
       </header>*/}
       <NumGrid/>
       <BottomBar/>
+      <Display/>
     </div>
   );
 }
