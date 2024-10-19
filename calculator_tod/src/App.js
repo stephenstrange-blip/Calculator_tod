@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-import NumGrid from './sections/Numpad';
+import NumGrid from './sections/numPad/Numpad';
 
 function App() {
   return (
