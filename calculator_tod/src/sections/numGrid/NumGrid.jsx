@@ -3,7 +3,7 @@ import SideBar from '../operatorPad/SideBar';
 
 
 
-function NumGrid({onNumClick}) {
+function NumGrid({onNumClick, onOperatorClick}) {
     return (
         <div className='upper-container'>
             <div className='numPad'>
@@ -25,7 +25,7 @@ function NumGrid({onNumClick}) {
                     )
                 })}
             </div>
-            <SideBar />
+            <SideBar onOperatorClick={onOperatorClick}/>
 
         </div>
 

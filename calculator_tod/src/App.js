@@ -8,7 +8,8 @@ import InputNum from './sections/core/calcFunctions';
 
 
 function App() {
-  const [num, setNum] = InputNum();
+  const [num, setNum, operator, setOperator] = InputNum();
+  
   return ( 
     <div className="App">
       {/*<header className="App-header">
@@ -25,9 +26,9 @@ function App() {
           Learn React
         </a>
       </header>*/}
-      <NumGrid onNumClick={setNum} />
-      <BottomBar onNumClick={setNum}/>
-      <Display value={num}/>
+      <NumGrid onNumClick={setNum} onOperatorClick={setOperator} />
+      <BottomBar onNumClick={setNum} onOperatorClick={setOperator}/>
+      <Display value={num} operator={operator}/>
     </div>
   );
 }

@@ -32,11 +32,16 @@ console.log(operate(1, "/", 2))
 console.log(operate(1, "%", 2))*/
 function InputNum () {
     const [num, setNum] = useState(0);
+    const [operator, setOperator] = useState('');
 
     const inputNum = (value) => {
         setNum(value);
     };
-    return [num, inputNum];
+    const inputOperator = (value) => {
+        setOperator(value);
+        //TODO Set arithmetic logi here
+    }
+    return [num, inputNum, operator, inputOperator];
 }
 
 
